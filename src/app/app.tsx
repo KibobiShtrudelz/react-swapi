@@ -1,9 +1,11 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import { Header } from '@components'
 import { Home, People } from '@pages'
+import { Main, Header } from '@components'
 
 import { paths } from '@constants'
+
+import styles from './app.module.scss'
 
 const router = createBrowserRouter([
   { path: paths.home, element: <Home /> },
@@ -12,10 +14,12 @@ const router = createBrowserRouter([
 
 export function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <Header />
 
-      <RouterProvider router={router} />
+      <Main>
+        <RouterProvider router={router} />
+      </Main>
     </div>
   )
 }

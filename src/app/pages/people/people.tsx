@@ -15,10 +15,8 @@ export function People() {
 
   return (
     <div className={styles.people}>
-      <h1>Welcome to People!</h1>
-
       {isFetching ? (
-        <p>Feching</p>
+        <p>Feching people...</p>
       ) : (
         <ul>
           {swapiData?.results?.map((person: PersonProps) => (
