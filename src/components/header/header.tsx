@@ -1,6 +1,6 @@
-import { paths } from '@constants';
+import { paths } from '@constants'
 
-import styles from './header.module.scss';
+import styles from './header.module.scss'
 
 export function Header() {
   return (
@@ -9,7 +9,7 @@ export function Header() {
         <button>People</button>
       </a>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

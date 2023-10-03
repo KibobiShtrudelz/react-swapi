@@ -1,3 +1,3 @@
 export type GenericAbortSignal = {
-  signal?: AbortSignal;
-};
+  signal?: AbortSignal
+}

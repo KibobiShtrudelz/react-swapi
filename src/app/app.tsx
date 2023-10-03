@@ -1,14 +1,14 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import { Header } from '@components';
-import { Home, People } from '@pages';
+import { Header } from '@components'
+import { Home, People } from '@pages'
 
-import { paths } from '@constants';
+import { paths } from '@constants'
 
 const router = createBrowserRouter([
   { path: paths.home, element: <Home /> },
-  { path: paths.people, element: <People /> },
-]);
+  { path: paths.people, element: <People /> }
+])
 
 export function App() {
   return (
@@ -17,7 +17,7 @@ export function App() {
 
       <RouterProvider router={router} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

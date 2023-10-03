@@ -1,4 +1,4 @@
-const baseUrl = 'https://swapi.dev/api/';
+const baseUrl = 'https://swapi.dev/api/'
 
 export const apiUrls = {
   root: baseUrl,
@@ -13,5 +13,5 @@ export const apiUrls = {
   vehicles: `${baseUrl}vehicles/`,
   vehicleById: (id: number) => `${baseUrl}vehicles/${id}/`,
   starships: `${baseUrl}starships/`,
-  starshipById: (id: number) => `${baseUrl}starships/${id}/`,
-} as const;
+  starshipById: (id: number) => `${baseUrl}starships/${id}/`
+} as const

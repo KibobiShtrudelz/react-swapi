@@ -1,2 +1,2 @@
-export * from './paths';
-export * from './api-urls';
+export * from './paths'
+export * from './api-urls'

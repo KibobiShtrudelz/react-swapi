@@ -1,6 +1,6 @@
-import { PersonProps } from '@interfaces';
+import { PersonProps } from '@interfaces'
 
-import styles from './person.module.scss';
+import styles from './person.module.scss'
 
 export function Person({
   url,
@@ -18,10 +18,10 @@ export function Person({
   homeworld,
   hair_color,
   skin_color,
-  birth_year,
+  birth_year
 }: PersonProps) {
-  const editedDate = new Date(edited).toLocaleString();
-  const createdDate = new Date(created).toLocaleString();
+  const editedDate = new Date(edited).toLocaleString()
+  const createdDate = new Date(created).toLocaleString()
 
   return (
     <div className={styles.person}>
@@ -50,7 +50,7 @@ export function Person({
           <p>Species:</p>
 
           <ul>
-            {species?.map((s) => (
+            {species?.map(s => (
               <li key={s}>{s}</li>
             ))}
           </ul>
@@ -62,7 +62,7 @@ export function Person({
           <p>Films:</p>
 
           <ul>
-            {films?.map((f) => (
+            {films?.map(f => (
               <li key={f}>{f}</li>
             ))}
           </ul>
@@ -74,7 +74,7 @@ export function Person({
           <p>Vehicles:</p>
 
           <ul>
-            {vehicles?.map((v) => (
+            {vehicles?.map(v => (
               <li key={v}>{v}</li>
             ))}
           </ul>
@@ -86,7 +86,7 @@ export function Person({
           <p>Starships:</p>
 
           <ul>
-            {starships?.map((s) => (
+            {starships?.map(s => (
               <li key={s}>{s}</li>
             ))}
           </ul>
@@ -97,7 +97,7 @@ export function Person({
 
       <p>Edited: {editedDate}</p>
     </div>
-  );
+  )
 }
 
-export default Person;
+export default Person

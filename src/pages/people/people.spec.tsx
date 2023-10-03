@@ -1,10 +1,10 @@
-import { render } from '@testing-library/react';
+import { render } from '@testing-library/react'
 
-import People from './people';
+import People from './people'
 
 describe('People', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<People />);
-    expect(baseElement).toBeTruthy();
-  });
-});
+    const { baseElement } = render(<People />)
+    expect(baseElement).toBeTruthy()
+  })
+})
